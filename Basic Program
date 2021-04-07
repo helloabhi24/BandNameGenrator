@@ -22,3 +22,22 @@ elif love_cal>=40 or love_cal<=50:
     print(f"Your score is {love_cal}, you are alright together.")
 else:
     print(f"Your score is {love_cal}")
+
+
+#Treasure Island
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+l_or_r = input("There is two ways to go. choose/type 'left' or 'right'")
+
+if l_or_r == 'left':
+    s_or_w = input("Here you stil wait or go straight with the help of swim, choose 'Swim'or 'Wait'")
+    if s_or_w == 'wait':
+        rby = input("At this time three gate in front of you, choose 'Red','Yellow','Blue'")
+        if rby == 'blue':
+            print("Congratulation! You Win!")
+        elif rby == 'red' or rby == 'yellow':
+            print("You open wrong gate. Game Over!")
+    else:
+        print("Game Over!")
+else:
+    print("Game Over!")
