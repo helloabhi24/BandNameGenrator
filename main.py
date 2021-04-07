@@ -27,3 +27,12 @@ people = int(input("Enter the amount of people who share the bill "))
 tip_in_per = (100+tip)/100
 cal= round((bill/people)*tip_in_per,2)
 print(f"Each one give {cal} money")
+
+#Even/Odd
+print("Welcome to number checker!")
+no = int(input("Give a number  "))
+
+if no%2==0:
+    print(f"{no} is a even no.")
+else:
+    print(f"{no} is a odd no.")
