@@ -60,7 +60,7 @@ else:
     print("Not a leap year")
 
 # Roller Costar Ride
-print("Welcome to RollerCostarRide!")
+print("Welcome to RollerCosterRide!")
 height = int(input("Tell your height in cm "))
 amount = 0
 if height>120:
@@ -72,6 +72,9 @@ if height>120:
     elif age<18:
         amount = 7
         print("your ticket is 7 rupee")
+    elif age>=45 or age<=55:
+        amount = 0
+        print("you are Free Rider")
     else:
         amount = 12
         print("your ticket is 12 rupee")
@@ -81,3 +84,6 @@ if height>120:
     print(f"your total bill is {amount}")
 else:
     print("You are not invited!")
+
+
+    
