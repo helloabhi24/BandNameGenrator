@@ -58,3 +58,26 @@ if year%4 ==0:
             print(f"{year} is a Leap Year")
 else:
     print("Not a leap year")
+
+# Roller Costar Ride
+print("Welcome to RollerCostarRide!")
+height = int(input("Tell your height in cm "))
+amount = 0
+if height>120:
+    print("Your welcome")
+    age = int(input("What is your age? "))
+    if age<12:
+        amount = 5
+        print("your ticket is 5 rupee")
+    elif age<18:
+        amount = 7
+        print("your ticket is 7 rupee")
+    else:
+        amount = 12
+        print("your ticket is 12 rupee")
+    take_pic = input("You want to click a pic say Y or N ")
+    if take_pic == 'Y' or take_pic == 'y':
+        amount+=3
+    print(f"your total bill is {amount}")
+else:
+    print("You are not invited!")
