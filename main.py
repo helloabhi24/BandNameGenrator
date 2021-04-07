@@ -10,4 +10,12 @@ h = float(input("Enter your h in m"))
 cal = int(w / (h**2))
 print("Bmi is ",cal)
 
+#Age Calculator
+age = int(input("Enter your age"))
+remain_age = 90-age
+months = 12*remain_age
+weeks = 52*remain_age
+days = 365*remain_age
+
+print(f"You have {months} months, {weeks} weeks,{days} days remain to age of 90")
 
