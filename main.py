@@ -19,3 +19,11 @@ days = 365*remain_age
 
 print(f"You have {months} months, {weeks} weeks,{days} days remain to age of 90")
 
+#Tip Calculator
+print("Welcome to Tip Calculator!")
+bill = float(input("Enter amount of Bill" ))
+tip = int(input("Enter the amount of tip "))
+people = int(input("Enter the amount of people who share the bill "))
+tip_in_per = (100+tip)/100
+cal= round((bill/people)*tip_in_per,2)
+print(f"Each one give {cal} money")
