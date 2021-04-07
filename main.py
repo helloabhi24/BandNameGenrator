@@ -5,10 +5,20 @@ pet_name = input("What's your first pet name? \n")
 print("Congratulation ! You have a Band Name ",'"',city +" ",  pet_name,'"')
 
 #BMI Calculator
-w = int(input("Enter your w in kg"))
-h = float(input("Enter your h in m"))
+w = int(input("Enter your w in kg "))
+h = float(input("Enter your h in m "))
 cal = int(w / (h**2))
-print("Bmi is ",cal)
+
+if cal<18.5:
+    print(f"Your BMI is {cal},You are underweight.")
+elif cal<25:
+    print(f"Your BMI is {cal},You are normal weight.")
+elif cal<30:
+    print(f"Your BMI is {cal},You are over weight.")
+elif cal<35:
+    print(f"Your BMI is {cal},You are obese.")
+else:
+    print(f"Your BMI is {cal},You are cliniclly obese.")
 
 #Age Calculator
 age = int(input("Enter your age"))
