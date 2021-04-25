@@ -14,3 +14,16 @@ names = input("Enter name of members.")
 name_list = names.split(",")
 rand_no = random.randint(0,len(name_list))
 print(f"{name_list[rand_no]} now pay the bills.")
+
+
+#Treasure Hunt
+r1 = ["","",""]
+r2 = ["","",""]
+r3 = ["","",""]
+map = [r1,r2,r3]
+print(f"{r1}\n{r2}\n{r3}\n")
+position=input("Enter position where you want a X:")
+row = int(position[0])
+col = int(position[1])
+map[row][col] = "X"
+print(f"{r1}\n{r2}\n{r3}\n")
