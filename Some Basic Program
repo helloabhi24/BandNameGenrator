@@ -10,7 +10,7 @@ else:
 
 #Pay Bills
 import random
-names = "Angela,Ben,Jenny,Michael,Chleo"
+names = input("Enter name of members.")
 name_list = names.split(",")
-rand_no = random.randint(0,4)
+rand_no = random.randint(0,len(name_list))
 print(f"{name_list[rand_no]} now pay the bills.")
