@@ -1,5 +1,4 @@
 #Heads or Tails
-
 import random
 print("tell what would you like ")
 random_coin = random.randint(0,1)
@@ -7,3 +6,11 @@ if random_coin == 0:
     print ("It's Tails")
 else:
     print ("It's Heads")
+
+
+#Pay Bills
+import random
+names = "Angela,Ben,Jenny,Michael,Chleo"
+name_list = names.split(",")
+rand_no = random.randint(0,4)
+print(f"{name_list[rand_no]} now pay the bills.")
