@@ -1,0 +1,9 @@
+#Heads or Tails
+
+import random
+print("tell what would you like ")
+random_coin = random.randint(0,1)
+if random_coin == 0:
+    print ("It's Tails")
+else:
+    print ("It's Heads")
