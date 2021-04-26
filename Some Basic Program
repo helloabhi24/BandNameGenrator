@@ -1,0 +1,43 @@
+#Heads or Tails
+import random
+print("tell what would you like ")
+random_coin = random.randint(0,1)
+if random_coin == 0:
+    print ("It's Tails")
+else:
+    print ("It's Heads")
+
+
+#Pay Bills
+import random
+names = input("Enter name of members.")
+name_list = names.split(",")
+rand_no = random.randint(0,len(name_list))
+print(f"{name_list[rand_no]} now pay the bills.")
+
+
+#Treasure Hunt
+r1 = ["","",""]
+r2 = ["","",""]
+r3 = ["","",""]
+map = [r1,r2,r3]
+print(f"{r1}\n{r2}\n{r3}\n")
+position=input("Enter position where you want a X:")
+row = int(position[0])
+col = int(position[1])
+map[row][col] = "X"
+print(f"{r1}\n{r2}\n{r3}\n")
+
+
+#Taking Avg without sum() or len()
+height_list = input("Enter list of height: ").split()
+no = 0
+sum = 0
+for i in height_list:
+    no = no+1
+for n in range(0,no):
+    height_list[n] = int(height_list[n])
+for n in range(0,no):
+    sum = sum + height_list[n]
+height_avg = int(sum/no)
+print(f"Avg is {height_avg}")
