@@ -41,3 +41,15 @@ for n in range(0,no):
     sum = sum + height_list[n]
 height_avg = int(sum/no)
 print(f"Avg is {height_avg}")
+
+
+pass_list = input("Enter list of no of students: ").split()
+max = 0
+
+#Finding Max Value
+for n in range(0,len(pass_list)):
+    pass_list[n] = int(pass_list[n])
+for i in range(0, len(pass_list) ):
+    if max<pass_list[i]:
+        max = pass_list[i]
+print(max)
